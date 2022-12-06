@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Zen+Dots&display=swap');
 
 /* General rules */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Kanit', sans-serif;
     text-align: center;
@@ -11,3 +16,76 @@ h1, h2, h3 {
     font-family: 'Zen Dots', cursive;
 }
 
+/* Header */
+header {
+    background-color: lightskyblue;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* Game rules */
+.game-rules {
+    margin-top: 35px;
+}
+
+#rule-list {
+    margin-top: 10px;
+}
+
+.game-rules p {
+    margin-top: 20px;
+}
+
+/* Gaming div */
+.game {
+    margin-top: 25px;
+}
+
+.choice-button {
+    margin: 25px 25px 25px 25px;
+    font-size: 4rem;
+    border-top: 10px;
+    border-bottom: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.choice-button:hover {
+    color: lightskyblue;
+}
+
+/* Gamer choice  */
+.float-left {
+    float: left;
+    margin-left: 25%;
+    width: 25%;
+}
+
+/* Computer choice */
+.float-right {
+    float: right;
+    margin-right: 25%;
+    width: 25%;
+}
+
+.float-right, .float-left {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.float-right i, .float-left i{
+    margin-top: 25px;
+    font-size: 500%;
+    background-color: white;
+}
+
+/* Results */
+#gamer-score {
+    color: green;
+    font-weight: bold;
+}
+
+#computer-score {
+    color: red;
+    font-weight: bold;
+}

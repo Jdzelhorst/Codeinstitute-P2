@@ -22,7 +22,7 @@
     <section>
     <!-- Game rules -->
         <div class="game-rules">
-            <h2>Game rules</h2>
+            <h2 id="game-rules-heading">Game rules</h2>
             <ul id="rule-list">
                 <li>Scissors <i class="fa-solid fa-scissors"></i> cuts Paper <i class="fa-solid fa-hand"></i></li>
                 <li>Paper <i class="fa-solid fa-hand"></i> covers Rock <i class="fa-solid fa-hand-back-fist"></i></li>
@@ -39,48 +39,44 @@
         </div>
     </section>
     <!-- Gaming div -->
-    <div class="game">
-        <!-- Button div -->
-        <div class="buttons">
-            <h2>Choose Wisely!</h2>
-            <button data-choice="0" class="rock choice-button">
-                <i class="fa-solid fa-hand-back-fist"></i>
-            </button>
-            <button data-choice="1" class="paper choice-button">
-                <i class="fa-solid fa-hand"></i>
-            </button>
-            <button data-choice="2" class="scissors choice-button">
-                <i class="fa-solid fa-scissors"></i>
-            </button>
-            <button data-choice="3" class="lizard choice-button">
-                <i class="fa-solid fa-hand-lizard"></i>
-            </button>
-            <button data-choice="4" class="spock choice-button">
-                <i class="fa-solid fa-hand-spock"></i>
-            </button>
+        <div class="game">
+            <!-- Button div -->
+            <div class="buttons">
+                <h2>Choose Wisely!</h2>
+                <button data-choice="0" class="rock choice-button">
+                    <i class="fa-solid fa-hand-back-fist"></i>
+                </button>
+                <button data-choice="1" class="paper choice-button">
+                    <i class="fa-solid fa-hand"></i>
+                </button>
+                <button data-choice="2" class="scissors choice-button">
+                    <i class="fa-solid fa-scissors"></i>
+                </button>
+                <button data-choice="3" class="lizard choice-button">
+                    <i class="fa-solid fa-hand-lizard"></i>
+                </button>
+                <button data-choice="4" class="spock choice-button">
+                    <i class="fa-solid fa-hand-spock"></i>
+                </button>
+            </div>
+            <!-- Gamer choice of action-->
+            <div class="gamer-choice float-left">
+                <h3>Your Choice</h3>
+                <i class="fa-solid fa-question"></i>
+            </div>
+            <!-- Computer choice of action-->
+            <div class="computer-choice float-right">
+                <h3>Computer choice</h3>
+                <i class="fa-solid fa-question"></i>
+            </div>
         </div>
-        <!-- Gamer choice of action-->
-        <div class="gamer-choice">
-            <i class="fa-solid fa-question"></i>
+        <!-- Game result div-->
+        <div class="game-result">
+            <p class="scores">Gamer Score <span id="gamer-score">0</span></p>
+            <p class="scores">Computer Score <span id="computer-score">0</span></p>
         </div>
-        <!-- Computer choice of action-->
-        <div class="computer-choice">
-            <i class="fa-solid fa-question"></i>
-        </div>
-    </div>
-    <!-- Game result div-->
-    <div class="game-result">
-        <p class="scores">Gamer Score <span id="gamer-score">0</span></p>
-        <p class="scores">Computer Score <span id="computer-score">0</span></p>
-    </div>
-    
+
     <script src="assets/js/script.js"></script>
 </body>
-
-
-
-
-
-
 
 </html>
