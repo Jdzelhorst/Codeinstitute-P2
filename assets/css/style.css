@@ -1,3 +1,13 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Zen+Dots&display=swap');
+
+/* General rules */
 body {
-    background-color: aqua;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
 }
+
+h1, h2, h3 {
+    font-family: 'Zen Dots', cursive;
+}
+
