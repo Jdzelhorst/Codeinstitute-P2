@@ -10,8 +10,9 @@
 body {
     font-family: 'Kanit', sans-serif;
     text-align: center;
-    background-color: sandybrown;
+    background-color: #FDF0D5;
     display: grid;
+    color: #3A3335;
 }
 
 h1, h2, h3 {
@@ -49,7 +50,7 @@ header {
     border-top: 10px;
     border-bottom: 10px;
     border-radius: 10px;
-    background-color: sandybrown;
+    background-color: #FDF0D5;
 }
 
 .choice-button:hover {
@@ -78,7 +79,7 @@ header {
 .float-right i, .float-left i{
     margin-top: 25px;
     font-size: 500%;
-    background-color: sandybrown;
+    background-color: #FDF0D5;
 }
 
 /* Results */
@@ -112,7 +113,7 @@ header {
 
 /* Reset button */
 #reset-button {
-    background-color: white;
+    background-color: #FDF0D5;
     border-radius: 5px;
     border: 2px solid;
     width: 150px;
@@ -122,7 +123,7 @@ header {
 }
 
 #reset-button:hover {
-    color: sandybrown;
+    color: #D04133;
 }
 
 /* The reset button and the reset float div are to be invisible untill the game is over */
@@ -133,8 +134,8 @@ header {
 
 /* Styling for the footer */
 footer {
-    background-color: black;
-    color: white;
+    background-color: #3A3335;
+    color: #FDF0D5;
     width: 100%;
     height: 100px;
 }
