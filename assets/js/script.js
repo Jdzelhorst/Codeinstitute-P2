@@ -54,6 +54,7 @@ function playGame(gamerChoice) {
     checkWinner();
 
 }
+// checkwinner function, by implementing all game rules. Starting increment gamer or computer score function
 
 function checkWinner(){
     if (gamerChoice == '0' && computerChoice == '2' || computerChoice == '3') {
