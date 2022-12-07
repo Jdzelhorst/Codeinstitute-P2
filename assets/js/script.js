@@ -58,47 +58,47 @@ function playGame(gamerChoice) {
 
 function checkWinner(){
     if (gamerChoice == '0' && computerChoice == '2' || computerChoice == '3') {
-        alert("You win! Lets have another round!");
+        gameMessage.innerHTML = "Congratulations, you won this round!";
         incrementGamerScore();
      }
      else if (gamerChoice == '0' && computerChoice == '1' || computerChoice == '4') {
-        alert("You Lose! Lets have another round!");
+        gameMessage.innerHTML = "You lost! Try again next round!";
         incrementComputerScore();
      }
      else if (gamerChoice == '1' && computerChoice == '0' || computerChoice == '4') {
-        alert("You Win! Lets have another round!");
+        gameMessage.innerHTML = "Congratulations, you won this round!";
         incrementGamerScore();
      }     
      else if (gamerChoice == '1' && computerChoice == '2' || computerChoice == '3') {
-        alert("You Lose! Lets have another round!");
+        gameMessage.innerHTML = "You lost! Try again next round!";
         incrementComputerScore();
      }
      else if (gamerChoice == '2' && computerChoice == '1' || computerChoice == '3') {
-        alert("You Win! Lets have another round!");
+        gameMessage.innerHTML = "Congratulations, you won this round!";
         incrementGamerScore();
      } 
      else if (gamerChoice == '2' && computerChoice == '0' || computerChoice == '4') {
-        alert("You Lose! Lets have another round!");
+        gameMessage.innerHTML = "You lost! Try again next round!";
         incrementComputerScore();
      } 
      else if (gamerChoice == '3' && computerChoice == '1' || computerChoice == '4') {
-        alert("You Win! Lets have another round!");
+        gameMessage.innerHTML = "Congratulations, you won this round!";
         incrementGamerScore();
      }
      else if (gamerChoice == '3' && computerChoice == '0' || computerChoice == '2') {
-        alert("You Lose! Lets have another round!");
+        gameMessage.innerHTML = "You lost! Try again next round!";
         incrementComputerScore();
      } 
      else if (gamerChoice == '4' && computerChoice == '0' || computerChoice == '2') {
-        alert("You Win! Lets have another round!");
+        gameMessage.innerHTML = "Congratulations, you won this round!";
         incrementGamerScore();
      }
      else if (gamerChoice == '4' && computerChoice == '1' || computerChoice == '3') {
-        alert("You Lose! Lets have another round!");
+        gameMessage.innerHTML = "You lost! Try again next round!";
         incrementComputerScore();
      } 
      else {
-        alert("Its a draw! Lets have another round!");
+        gameMessage.innerHTML = "How exciting! It's a draw! Try again!";
      }
 }
 
