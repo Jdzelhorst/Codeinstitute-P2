@@ -10,6 +10,7 @@ let choices = ["rock", "paper", "scissors", "lizard", "spock"];
 let gameMessage = document.getElementById('game-text');
 let gamerChoice;
 let computerChoice;
+let resetFloat = document.getElementById('reset-float')
 let resetButton = document.getElementById('reset-button');
 
 
@@ -122,9 +123,35 @@ function incrementGamerScore() {
 function gameOver() {
     if (gamerScore.innerText === "5"){
         gameMessage.innerHTML = "Congratulations, you have won the game!";
+        playAgain();
     }
     else if (computerScore.innerText === "5") {
         gameMessage.innerHTML = "You have lost the game. Do you want to try again?";
+        playAgain();
     }
 }
 
+// The reset function pops up after the game is over
+
+function playAgain(){
+    resetFloat.classList.remove("invisible");
+    resetButton.classList.remove("invisible");
+}
+
+// Even listener to click the play again button
+
+resetButton.addEventListener("click", function() {
+    resetGame();
+})
+
+// The resetGame function resets all altered elements since the playGame function
+
+function resetGame () {
+    computerScore.innerText = 0;
+    gamerScore.innerText = 0;
+    gameMessage.innerHTML = "Let's play again!";
+    gamerChoiceFont.className = "fa-solid fa-question"
+    computerChoiceFont.className = "fa-solid fa-question"
+    resetFloat.classList.add("invisible");
+    resetButton.classList.add("invisible");
+}
