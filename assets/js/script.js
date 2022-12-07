@@ -3,8 +3,8 @@
 let choiceButtons = document.getElementsByClassName('choice-button');
 let gamerScore = document.getElementById('gamer-score');
 let computerScore = document.getElementById('computer-score');
-let gamerChoiceFont = document.getElementsByClassName('gamer-choice');
-let computerChoiceFont = document.getElementsByClassName('computer-choice');
+let gamerChoiceFont = document.getElementById('gamer-choice');
+let computerChoiceFont = document.getElementById('computer-choice');
 let choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
 let gameMessage = document.getElementById('game-text');
@@ -16,7 +16,7 @@ let computerChoice;
 
 for (let button of choiceButtons) {
     button.addEventListener("click", function() {
-        playerOption = this.getAttribute("data-choice");
+        gamerChoice = this.getAttribute("data-choice");
         playGame(gamerChoice);
     });
 }
@@ -54,3 +54,50 @@ function playGame(gamerChoice) {
     checkWinner();
 
 }
+
+function checkWinner(){
+    if (gamerChoice == '0' && computerChoice == '2' || computerChoice == '3') {
+        alert("You win! Lets have another round!");
+        incrementGamerScore();
+     }
+     else if (gamerChoice == '0' && computerChoice == '1' || computerChoice == '4') {
+        alert("You Lose! Lets have another round!");
+        incrementComputerScore();
+     }
+     else if (gamerChoice == '1' && computerChoice == '0' || computerChoice == '4') {
+        alert("You Win! Lets have another round!");
+        incrementGamerScore();
+     }     
+     else if (gamerChoice == '1' && computerChoice == '2' || computerChoice == '3') {
+        alert("You Lose! Lets have another round!");
+        incrementComputerScore();
+     }
+     else if (gamerChoice == '2' && computerChoice == '1' || computerChoice == '3') {
+        alert("You Win! Lets have another round!");
+        incrementGamerScore();
+     } 
+     else if (gamerChoice == '2' && computerChoice == '0' || computerChoice == '4') {
+        alert("You Lose! Lets have another round!");
+        incrementComputerScore();
+     } 
+     else if (gamerChoice == '3' && computerChoice == '1' || computerChoice == '4') {
+        alert("You Win! Lets have another round!");
+        incrementGamerScore();
+     }
+     else if (gamerChoice == '3' && computerChoice == '0' || computerChoice == '2') {
+        alert("You Lose! Lets have another round!");
+        incrementComputerScore();
+     } 
+     else if (gamerChoice == '4' && computerChoice == '0' || computerChoice == '2') {
+        alert("You Win! Lets have another round!");
+        incrementGamerScore();
+     }
+     else if (gamerChoice == '4' && computerChoice == '1' || computerChoice == '3') {
+        alert("You Lose! Lets have another round!");
+        incrementComputerScore();
+     } 
+     else {
+        alert("Its a draw! Lets have another round!");
+     }
+}
+     
