@@ -10,6 +10,7 @@ let choices = ["rock", "paper", "scissors", "lizard", "spock"];
 let gameMessage = document.getElementById('game-text');
 let gamerChoice;
 let computerChoice;
+let resetButton = document.getElementById('reset-button');
 
 
 // Event listeners to choiceButtons
@@ -52,6 +53,7 @@ function playGame(gamerChoice) {
     }
 
     checkWinner();
+    gameOver();
 
 }
 // checkwinner function, by implementing all game rules. Starting increment gamer or computer score function
@@ -114,3 +116,15 @@ function incrementGamerScore() {
     let oldScore = computerScore.innerText;
     computerScore.innerText = ++oldScore;
  }
+
+//  The game is over when the gamer or the computer gets a score of 5 points
+
+function gameOver() {
+    if (gamerScore.innerText === "5"){
+        gameMessage.innerHTML = "Congratulations, you have won the game!";
+    }
+    else if (computerScore.innerText === "5") {
+        gameMessage.innerHTML = "You have lost the game. Do you want to try again?";
+    }
+}
+
