@@ -19,7 +19,7 @@
         <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock!</h1>
     </header>
     
-    <section>
+    <section id="game-intro">
     <!-- Game rules -->
         <div class="game-rules">
             <h2 id="game-rules-heading">Game rules</h2>
@@ -35,10 +35,15 @@
                 <li>Spock <i class="fa-solid fa-hand-spock"></i> vaporises Rock <i class="fa-solid fa-hand-back-fist"></i></li>
                 <li>Rock <i class="fa-solid fa-hand-back-fist"></i> crushes Scissors <i class="fa-solid fa-scissors"></i></li>
             </ul>
-            <p> Best of five wins!</p>
+            <p>First to get five points wins!</p>
         </div>
     </section>
-    <!-- Gaming div -->
+    <section id="main-game">
+        <!-- Reset floating div and reset button, only visible when the game is over-->    
+        <div id="reset-float" class="invisible">
+            <button id="reset-button" class="invisible"><h3>Play Again!</h3></button>
+        </div>
+        <!-- Gaming div -->
         <div class="game">
             <!-- Button div -->
             <div class="buttons">
@@ -75,11 +80,7 @@
             <p class="scores">Gamer Score <span id="gamer-score">0</span></p>
             <p class="scores">Computer Score <span id="computer-score">0</span></p>
         </div>
-
-        <!-- Reset button, only visible when the game is over-->
-        <div>
-            <button id="reset-button" class="invisible"><h3>Play Again!</h3></button>
-        </div>
+    </section>    
     <script src="assets/js/script.js"></script>
 </body>
 
