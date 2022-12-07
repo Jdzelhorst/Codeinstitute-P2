@@ -101,4 +101,16 @@ function checkWinner(){
         alert("Its a draw! Lets have another round!");
      }
 }
-     
+
+// The increment scores functions
+// These functions are to declare the scores for the gamer and computer
+
+function incrementGamerScore() {
+    let oldScore = gamerScore.innerText;
+    gamerScore.innerText = ++oldScore;
+ }
+ 
+ function incrementComputerScore() {
+    let oldScore = computerScore.innerText;
+    computerScore.innerText = ++oldScore;
+ }
