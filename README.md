@@ -1,108 +1,102 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper, Scissors, Lizard, Spock!
 
-Welcome Jdzelhorst,
+Rock, Paper, Scissors, Lizard, Spock! The title says it all. This is a minigame of the extended version of the rock, paper, scissors game. Adding the lizard and spock as extra possibilities. The game was originally invented by Sam Kass and Karen Bryla, but it wasn't widely known until the comedy central show "The Big Bang Theory" made it popular.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This minigame was build in a fully responsive JavaScript website. The human player will play against a computer based on a random number generator. The chances of you winning are as high as the chances of you losing.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Responsice Mockup](assets/images/mock_up.png)
 
-## Gitpod Reminders
+## Features 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Existing Features
 
-`python3 -m http.server`
+- __The Title and the Heading__
 
-A blue button should appear to click: _Make Public_,
+  - Featured at the top of the page, the title and heading are easy to see for the user. It should be immediatly clear to the user what kind of website it is and which game you can play on this site.
 
-Another blue button should appear to click: _Open Browser_.
+![Title_heading](assets/images/title_heading.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- __The Game Rules__
 
-A blue button should appear to click: _Make Public_,
+  - This section shows the rules of the Rock, Paper, Scissors, Lizard, Spock! game. 
+  - The rules are written in such a way, it should make clear to the user why some choices beat another choice. For example why does a rock beat a lizard? The rock crushes the lizard.
+  - The rules are on top of the game. This way the user can always check why he or she lost or won the game.
 
-Another blue button should appear to click: _Open Browser_.
+![Game_rules](assets/images/game_rules.png)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- __The Game Section__
 
-To log into the Heroku toolbelt CLI:
+  - In this section the game begins when the user clicks one of the five option buttons. The buttons are made with font icons from Fontawesome. 
+  - When the user clicks a button, the random number generator will activate to generate the computer choice of action.
+  - The game will show both choices and presents the result of the round above the option buttons. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Game_section](assets/images/game_section.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __The Score Section__
 
-------
+  - This section displays the scores of the player and the computer.
+  - The score of the player is green and the score of the computer is red.
 
-## Release History
+![Game_score](assets/images/game_score.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- __The Footer__
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+  - This section displays the creator of this "Rock, Paper, Scissors, Lizard, Spock!" minigame.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Footer](assets/images/footer.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Feature Ideas
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- An idea for a new feature is to implement a highscore  section. This way the users can see how they stack up against other players
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Testing 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Validator Testing 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- HTML
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2F8000-jdzelhorst-codeinstitut-9ozhtgbjal7.ws-eu78.gitpod.io%2F)
+- CSS
+    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2F8000-jdzelhorst-codeinstitut-9ozhtgbjal7.ws-eu78.gitpod.io%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- JavaScript
+    - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+      - The following metrics were returned: 
+      - There are 9 functions in this file.
+      - Function with the largest signature take 1 arguments, while the median is 0.
+      - Largest function has 22 statements in it, while the median is 2.
+      - The most complex function has a cyclomatic complexity value of 31 while the median is 1.
+- Lighthouse
+![Lighthouse](assets/images/lighthouse.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Unfixed Bugs
 
-------
+- No unfixed bugs are known
 
-## FAQ about the uptime script
+## Deployment
 
-**Why have you added this script?**
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- This website was deployed to GitHub pages. The steps to deploy are:
+  - In the GitHub repository, navigate to the Settings tab.
+  - From settings click on "Pages" on the left.
+  - Here we select the main branch and click save. 
+- This the live [Link](https://jdzelhorst.github.io/Hacks4Life/)
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Credits 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- The Javascript code is inspired and based on the following repositories:
+    -   CodeInstitute Rock, Paper, Scissors project
+    -   CodeInstitute Love Maths walkthrough project
+    -   Rock Paper Scissors by Christo107 [Link](https://github.com/Christo107/CI-PP-02-Rock_Paper_Scissors)
+        - Big thank you to Christo107! It gave a lot of inspiration and ideas to write my code.
+    - The icons on the entire website were taken from [Font Awesome](https://fontawesome.com/)

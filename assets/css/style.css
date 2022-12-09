@@ -120,6 +120,7 @@ header {
     height: 100px;
     font-size: 150%;
     margin-top: 125px;
+    font-family: 'Zen Dots', cursive;
 }
 
 #reset-button:hover {
