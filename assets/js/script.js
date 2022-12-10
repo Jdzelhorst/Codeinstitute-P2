@@ -1,4 +1,5 @@
 // Declarations of variables for DOM elements
+// Based on Code Institute Rock Paper Scissors game 
 
 let choiceButtons = document.getElementsByClassName('choice-button');
 let gamerScore = document.getElementById('gamer-score');
@@ -24,6 +25,7 @@ for (let button of choiceButtons) {
 
 // Adding function to select the right Font with the right gamerChoice and computerChoice
 // Adding the randomnumber generator for the computerChoice
+// Code based on Code Institute Rock Paper Scissors game
 
 function playGame(gamerChoice) {
     if (gamerChoice == "0") {
@@ -57,6 +59,7 @@ function playGame(gamerChoice) {
 
 }
 // checkwinner function, by implementing all game rules. Starting increment gamer or computer score function
+// Based on Christo107 Rock_Paper_Scissors game
 
 function checkWinner(){
     if (gamerChoice == '0' && computerChoice == '2' || computerChoice == '3') {
@@ -106,6 +109,7 @@ function checkWinner(){
 
 // The increment scores functions
 // These functions are to declare the scores for the gamer and computer
+// Based on Code Institute's 'Love Maths' score function code
 
 function incrementGamerScore() {
     let oldScore = gamerScore.innerText;
@@ -131,6 +135,7 @@ function gameOver() {
 }
 
 // The reset function pops up after the game is over
+// Based on Christo107 Rock_Paper_Scissors game
 
 function playAgain(){
     resetFloat.classList.remove("invisible");
