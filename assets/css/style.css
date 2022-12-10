@@ -13,6 +13,9 @@ body {
     background-color: #FDF0D5;
     display: grid;
     color: #3A3335;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1, h2, h3 {
@@ -39,6 +42,7 @@ header {
     margin-top: 20px;
 }
 
+
 /* Gaming div */
 .game {
     margin-top: 25px;
@@ -55,6 +59,12 @@ header {
 
 .choice-button:hover {
     color: lightskyblue;
+}
+
+/* Main game section */
+
+#main-game{
+    flex: 1 0 auto;
 }
 
 /* Gamer choice  */
