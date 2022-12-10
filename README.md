@@ -74,9 +74,9 @@ This minigame was build in a fully responsive JavaScript website. The human play
 ### Validator Testing 
 
 - HTML
-    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2F8000-jdzelhorst-codeinstitut-9ozhtgbjal7.ws-eu78.gitpod.io%2F)
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjdzelhorst.github.io%2FRock-Paper-Scissors-Lizard-Spock%2F)
 - CSS
-    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2F8000-jdzelhorst-codeinstitut-9ozhtgbjal7.ws-eu78.gitpod.io%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjdzelhorst.github.io%2FRock-Paper-Scissors-Lizard-Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - JavaScript
     - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
       - The following metrics were returned: 
@@ -98,7 +98,7 @@ This minigame was build in a fully responsive JavaScript website. The human play
   - In the GitHub repository, navigate to the Settings tab.
   - From settings click on "Pages" on the left.
   - Here we select the main branch and click save. 
-- This the live [Link](https://jdzelhorst.github.io/Hacks4Life/)
+- This the live [Link](https://jdzelhorst.github.io/Rock-Paper-Scissors-Lizard-Spock/)
 
 
 ## Credits 
