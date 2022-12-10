@@ -51,14 +51,25 @@ This minigame was build in a fully responsive JavaScript website. The human play
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+- Game function
+    - Before implementing the 'gameMessage.innerHTML = "- game message -";', I used the alert function to send a message to the user. The problem here was that the icons wouldn't change until the user clicked the 'okay' button from the popup. This slowed down the game process because the user had to click an extra button before seeing the computer choice.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+- Game over function
+    - After testing the game function multiple times, I needed to implement the game over function. But the question was: When was the game over? 10 points was too long, seeing as the game is literally a 50-50 percent chance of winning or losing. 3 points was way too short. During the testing the game too often over af ter 3 clicks. This is why I have chosen to implement the first to 5 points wins.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+- Reset function
+    - The first tests after putting in the reset function code in Javascript, the gamer-score did not reset to 0. After that I implemented this code into the function: 
+    'computerScore.innerText = 0;'
+    'gamerScore.innerText = 0;'
+    Now it works properly
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
+- Styling the footer
+    - The site does not have much content. When the screenheight was higher than 850 pixels, the footer would float   above the bottom of the page. 
+    I fixed it by adding this code to the body element in css:
+      - display: flex;
+      - flex-direction: column;
+      - min-height: 100vh;
+    And by adding "flex: 1 0 auto;" to #main-game in css.
 
 ### Validator Testing 
 
@@ -82,8 +93,6 @@ If this section grows too long, you may want to split it off into a separate fil
 - No unfixed bugs are known
 
 ## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
 - This website was deployed to GitHub pages. The steps to deploy are:
   - In the GitHub repository, navigate to the Settings tab.
