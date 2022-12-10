@@ -55,6 +55,7 @@ header {
     border-bottom: 10px;
     border-radius: 10px;
     background-color: #FDF0D5;
+    color: #3A3335;
 }
 
 .choice-button:hover {
