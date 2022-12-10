@@ -66,9 +66,9 @@ This minigame was build in a fully responsive JavaScript website. The human play
 - Styling the footer
     - The site does not have much content. When the screenheight was higher than 850 pixels, the footer would float   above the bottom of the page. 
     I fixed it by adding this code to the body element in css:
-      - display: flex;
-      - flex-direction: column;
-      - min-height: 100vh;
+    'display: flex;
+    flex-direction: column;
+    min-height: 100vh;'
     And by adding "flex: 1 0 auto;" to #main-game in css.
 
 ### Validator Testing 
